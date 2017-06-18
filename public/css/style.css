@@ -1,0 +1,102 @@
+body {
+    background-color: rgb(238, 241, 245);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.table-container {
+    background: #fff;
+    padding: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 30px;
+}
+
+table thead th {
+    text-align: center;
+}
+
+table p {
+    margin: 0;
+}
+
+.data-table-actions {
+    font-size: 16px;
+    color: lightslategrey;
+    padding: 3px 7px;
+}
+
+.data-table-actions:hover {
+    color: orange;
+}
+
+.add-product {
+    float: right;
+    margin-bottom: 40px;
+}
+
+#editProductModal .modal-dialog {
+    width: calc(100% - 40px);
+}
+
+.tab-content {
+    padding: 0 15px;
+}
+
+.tab-content h4 {
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.glyphicon.arrow {
+    font-size: 14px;
+    margin-right: 5px;
+    color: #337ab7;
+}
+
+.content-collapse {
+    margin-left: 20px;
+}
+
+span.blue {
+    color: #337ab7;
+    font-weight: bold;
+}
+
+.border-tabs {
+    padding-left: 0;
+    border-left: 1px solid #ddd;
+}
+
+.image-crop img {
+    max-width: 100%;
+}
+
+.cropper-btn .btn {
+    margin: 10px 5px;
+}
+
+.cropper-container {
+    max-width: 100%;
+}
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.get-data-picture {
+    display: inline-block;
+    margin: 0 5px 5px;
+    float: right;
+}
+
+.get-data-picture span {
+    font-size: 8px;
+    margin-right: 5px;
+    top: -1px;
+}
