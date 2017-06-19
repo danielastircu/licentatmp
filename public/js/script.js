@@ -99,6 +99,13 @@ var App = {
         jQuery('#editProductModal').modal('hide');
         App.table.ajax.reload();
         toastr.success('Product edited');
+    },
+
+    getImageDataSuccess: function (response) {
+        console.log(response);
+        if (response.target != 'nutrition') {
+            $("[name='" + response.target + "']").val(response.text);
+        }
     }
 
 
@@ -164,12 +171,9 @@ $(document).on('click', '.get-data-picture', function (e) {
         processData: false,
         contentType: false,
         type: 'POST',
-        success: function (response) {
-            alert('success')
-        },
+        success: App.getImageDataSuccess,
         error: function (XMLHttpRequest, textStatus, errorThrown) {
-            console.log("Error: error on sending image and image data on ajax call");
-            // MainOE.displayGeneralError();
+            toastr.error("Error: error on sending the image. Make sure you select an image and try again");
         }
     });
 

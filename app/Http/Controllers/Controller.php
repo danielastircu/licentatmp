@@ -76,9 +76,13 @@ class Controller extends BaseController {
 
 		$this->visionService->createPicture( $data, $file );
 
-		$this->visionService->getImageData( $data['id'] );
+		$obj = $this->visionService->getImageData( $data['id'] );
 
-		var_dump( $data );
-		die;
+		$text = $this->visionService->getFullText( $obj );
+
+		$response['target'] = $data['target'];
+		$response['text']   = $text;
+
+		return $response;
 	}
 }
