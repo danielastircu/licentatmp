@@ -21,10 +21,12 @@ var App = {
             ajax: {
                 url: 'get-products'
             },
-            columnDefs: [{
-                targets: 2,
-                orderable: false
-            }]
+            columnDefs: [
+                {
+                    targets: 2,
+                    orderable: false
+                },
+            ]
         });
     },
 

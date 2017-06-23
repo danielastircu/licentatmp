@@ -34,8 +34,8 @@
         <table id="products" class="table table-striped table-bordered dataTable no-footer">
             <thead>
             <tr>
-                <th>Id</th>
-                <th>Name</th>
+                <th class="text-left">ID</th>
+                <th class="text-left">Name</th>
                 <th>Actions</th>
             </thead>
             <tbody>
@@ -45,7 +45,7 @@
 </div>
 @include('addProductModal')
 <div id="editProductModal" class="modal inmodal fade" role="dialog" aria-hidden="true"></div>
-{{--@include('viewProduct')--}}
+@include('viewProductModal')
 <script type="text/javascript" src="{{asset('assets/jquery/jquery-3.2.1.min.js')}}"></script>
 <script type="text/javascript"
         src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>

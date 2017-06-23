@@ -9,6 +9,7 @@ use Google\Auth\Cache\MemoryCacheItemPool;
 
 class GoogleConnection {
 	public function getImageData( $imagePath ) {
+
 		$guzzleClient = new \GuzzleHttp\Client( [ 'curl' => [ CURLOPT_SSL_VERIFYPEER => false, ], ] );
 		$handler      = function ( $request, array $options = [ ] ) use ( $guzzleClient ) {
 			return $guzzleClient->send( $request, $options );
